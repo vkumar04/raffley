@@ -2,6 +2,7 @@ defmodule RaffleyWeb.RuleController do
   use RaffleyWeb, :controller
 
   def index(conn, _params) do
-    render(conn, :index)
+    emojis = ~w(👀 🙈 😏) |> Enum.random() |> String.duplicate(5)
+    render(conn, :index, emojis: emojis)
   end
 end

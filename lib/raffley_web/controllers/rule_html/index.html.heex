@@ -2,3 +2,10 @@
 <p>
   <%= @emojis %>
 </p>
+<ol>
+  <%= for rule <- @rules do %>
+    <li>
+      <%= rule.text %>
+    </li>
+  <% end %>
+</ol>

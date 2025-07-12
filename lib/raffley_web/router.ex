@@ -18,6 +18,7 @@ defmodule RaffleyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/greeting", GreetingController, :index
     get "/rules", RuleController, :index
     get "/tips", TipController, :tip
   end

@@ -20,7 +20,9 @@ defmodule RaffleyWeb.Router do
     get "/", PageController, :home
     get "/greeting", GreetingController, :index
     get "/rules", RuleController, :index
+    get "/rules/:id", RuleController, :show
     get "/tips", TipController, :tip
+    get "/tips/:id", TipController, :show
   end
 
   # Other scopes may use custom stacks.

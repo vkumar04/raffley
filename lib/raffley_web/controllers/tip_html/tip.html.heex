@@ -2,7 +2,9 @@
 <ol>
   <%= for tip <- @tips do %>
     <li>
-      <%= tip.text %>
+      <a href={~p"/tips/#{tip.id}"}>
+        {tip.text}
+      </a>
     </li>
   <% end %>
 </ol>
